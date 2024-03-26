@@ -52,6 +52,7 @@ async function getUrlAnalytics(req,res){
         return res.status(200).json({
             "total visits" : hist
         });
+        console.log("check for personal push");
     }catch(error){ 
         console.error("Error :", error);
         return res.status(500).send('Internal Server Error');
